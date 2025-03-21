@@ -5,12 +5,12 @@ import ResultsList from './components/ResultsList';
 import EligibilityCheck from './components/EligibilityCheck';
 import ProposalGenerator from './components/ProposalGenerator';
 import ProposalEditor from './components/ProposalEditor';
-import EligibilityRequirements from './components/EligibilityRequirements';
+
 
 function App() {
   // Steps: 1. Search, 2. Eligibility Check, 3. Proposal Generation, 4. Edit & Download
   const [currentStep, setCurrentStep] = useState(1);
-  const [eligibilityData, setEligibilityData] = useState([]);
+  
   const [searchResults, setSearchResults] = useState([]);
   const [selectedGrant, setSelectedGrant] = useState(null);
   const [eligibilityPoints, setEligibilityPoints] = useState('');

@@ -11,7 +11,7 @@ function ProposalGenerator({
 }) {
   const [currentSection, setCurrentSection] = useState('');
   
-  // Define the sections and their fields based on grant type
+  // Define the sections and their fields based on grant type -- test
   const companySections = {
     organization: {
       title: 'Organization Information',
