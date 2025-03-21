@@ -1,0 +1,322 @@
+.eligibility-check {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .grant-details-panel {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem;
+  }
+  
+  .grant-details-panel h3 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--mid-gray);
+    padding-bottom: 0.5rem;
+  }
+  
+  .grant-details-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .grant-description {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px dashed var(--mid-gray);
+  }
+  
+  .eligibility-questions {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem;
+  }
+  
+  .instructions {
+    margin-bottom: 2rem;
+  }
+  
+  .instructions h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .instructions p {
+    color: var(--dark-gray);
+    font-size: 0.95rem;
+  }
+  
+  .question-container {
+    background-color: var(--light-gray);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--primary-color);
+  }
+  
+  .question {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .question-number {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+  }
+  
+  .question p {
+    margin: 0;
+    font-size: 1.05rem;
+  }
+  
+  .answer-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-left: 1.5rem;
+  }
+  
+  .answer-button {
+    padding: 0.5rem 1.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--mid-gray);
+    background-color: white;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+  }
+  
+  .answer-button.yes {
+    color: var(--success-color);
+  }
+  
+  .answer-button.yes.selected {
+    background-color: var(--success-color);
+    color: white;
+    border-color: var(--success-color);
+  }
+  
+  .answer-button.no {
+    color: var(--danger-color);
+  }
+  
+  .answer-button.no.selected {
+    background-color: var(--danger-color);
+    color: white;
+    border-color: var(--danger-color);
+  }
+  
+  .answer-button:hover:not(.selected) {
+    background-color: var(--light-gray);
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  
+  .check-eligibility-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .check-eligibility-button:hover:not(:disabled) {
+    background-color: var(--primary-dark);
+  }
+  
+  .check-eligibility-button:disabled {
+    background-color: var(--dark-gray);
+    cursor: not-allowed;
+  }
+  
+  .eligibility-result {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .result-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .result-icon.success {
+    background-color: var(--success-color);
+    color: white;
+  }
+  
+  .result-icon.failure {
+    background-color: var(--danger-color);
+    color: white;
+  }
+  
+  .eligibility-result h2 {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+  }
+  
+  .eligibility-result.eligible h2 {
+    color: var(--success-color);
+  }
+  
+  .eligibility-result.not-eligible h2 {
+    color: var(--danger-color);
+  }
+  
+  .eligibility-result p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: var(--dark-gray);
+    font-size: 1.1rem;
+  }
+  /* Add these new styles for the eligibility requirements */
+
+.eligibility-requirements {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+}
+
+.requirements-list {
+  margin: 1.5rem 0;
+}
+
+.requirement-item {
+  display: flex;
+  margin-bottom: 1rem;
+  background-color: var(--light-gray);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+}
+
+.point-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.point-text {
+  flex: 1;
+  line-height: 1.5;
+}
+
+.no-requirements {
+  color: var(--dark-gray);
+  font-style: italic;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.eligibility-confirmation {
+  background-color: var(--light-gray);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.confirmation-question {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.confirmation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.confirm-yes-button,
+.confirm-no-button {
+  padding: 0.75rem 2rem;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.confirm-yes-button {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.confirm-yes-button:hover {
+  background-color: var(--success-dark);
+}
+
+.confirm-no-button {
+  background-color: var(--danger-color);
+  color: white;
+}
+
+.confirm-no-button:hover {
+  background-color: var(--danger-dark);
+}
+
+/* Keep existing styles below */
+  .continue-button {
+    background-color: var(--success-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .continue-button:hover {
+    background-color: var(--success-dark);
+  }
+  
+  @media (max-width: 768px) {
+    .answer-buttons {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .action-buttons {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }

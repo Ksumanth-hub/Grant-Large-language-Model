@@ -1,0 +1,324 @@
+/* Enhanced ProposalGenerator.css */
+
+.proposal-generator {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Privacy notice banner */
+.placeholder-notice {
+  background-color: #e8f4fd;
+  border-left: 4px solid #2c78c7;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.notice-content h4 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #2c78c7;
+  font-size: 16px;
+}
+
+.notice-content p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Grant type indicator */
+.grant-type-indicator {
+  margin-bottom: 20px;
+}
+
+.grant-type-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.grant-type-badge.company {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.grant-type-badge.individual {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+/* Section tabs */
+.section-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.section-tab {
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+  position: relative;
+  margin-bottom: -1px;
+}
+
+.section-tab:hover {
+  background-color: #e0e0e0;
+}
+
+.section-tab.active {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom-color: #fff;
+  font-weight: 600;
+}
+
+.section-tab.complete {
+  color: #2e7d32;
+}
+
+.complete-check {
+  margin-left: 5px;
+  color: #2e7d32;
+}
+
+/* Grant context */
+.grant-context {
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+}
+
+.grant-context-header {
+  margin-bottom: 10px;
+}
+
+.grant-context-header h3 {
+  font-size: 16px;
+  margin: 0 0 5px 0;
+  color: #555;
+}
+
+.grant-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.grant-tips {
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.grant-tips h4 {
+  font-size: 14px;
+  margin: 0 0 10px 0;
+  color: #555;
+}
+
+.grant-tips ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.grant-tips li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Form section */
+.form-section {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+.form-section h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.form-fields {
+  display: grid;
+  gap: 20px;
+}
+
+.form-field {
+  margin-bottom: 15px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+.optional-marker {
+  font-weight: normal;
+  font-style: italic;
+  color: #6c757d;
+  font-size: 0.9em;
+}
+
+.form-field input,
+.form-field textarea,
+.form-field select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.form-field input:focus,
+.form-field textarea:focus,
+.form-field select:focus {
+  border-color: #2c78c7;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(44, 120, 199, 0.2);
+}
+
+/* Placeholder fields styling */
+.placeholder-enabled label {
+  color: #2c78c7;
+}
+
+.placeholder-field {
+  background-color: #f7fbff;
+  border: 1px dashed #a0c3e6 !important;
+}
+
+.placeholder-field:focus {
+  border: 1px dashed #2c78c7 !important;
+  box-shadow: 0 0 0 2px rgba(44, 120, 199, 0.1);
+}
+
+.field-note {
+  margin-top: 6px;
+  color: #6c757d;
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* Section navigation */
+.section-navigation {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev-button,
+.next-button,
+.generate-button,
+.back-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.prev-button {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.prev-button:hover {
+  background-color: #e0e0e0;
+}
+
+.next-button {
+  background-color: #2c78c7;
+  color: white;
+}
+
+.next-button:hover {
+  background-color: #1a67b6;
+}
+
+.generate-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.generate-button:hover {
+  background-color: #218838;
+}
+
+.back-button {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.back-button:hover {
+  background-color: #e0e0e0;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Bottom navigation */
+.bottom-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.completion-status {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.completion-bar {
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.completion-progress {
+  height: 100%;
+  background-color: #28a745;
+  transition: width 0.3s;
+}
+
+.completion-text {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+/* Loading state */
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
